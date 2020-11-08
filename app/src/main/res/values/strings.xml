@@ -1,0 +1,9 @@
+<resources>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="app_name">Assigmint 2</string>
+</resources>

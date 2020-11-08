@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    >
+
+    <TableRow>
+        <TextView
+            android:width="100dp"
+            android:text=" Name:" />
+        <EditText
+            android:id="@+id/etext_name"
+            android:width="150dp"
+            android:inputType="text" />
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:width="100dp"
+            android:text=" height:" />
+        <EditText
+            android:id="@+id/etext_height"
+            android:hint="In centimeters"
+            android:width="150dp"
+            android:inputType="text" />
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:width="100dp"
+            android:text=" Weight:" />
+        <EditText
+            android:id="@+id/etext_weight"
+            android:hint="In Kg"
+            android:width="150dp"
+            android:inputType="text">
+        </EditText>
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:width="100dp"
+            android:text=" Gender" />
+        />
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/gender" />
+
+    </TableRow>
+
+
+
+    <TableRow>
+
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:onClick="btnLoginOnClick"
+            android:text="Save" />
+        <CheckBox
+            android:text="Remember me"
+            android:id="@+id/c_box"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnBmiOnclick"
+            android:text="calculate the bmi"/>
+        <TextView
+            android:id="@+id/resBmiView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:text="go to Activity2"
+            android:id="@+id/act2btn"
+            android:onClick="btnActivtiOnClick"
+            />
+
+    </TableRow>
+</TableLayout>
